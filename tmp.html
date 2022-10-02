@@ -1,0 +1,505 @@
+
+  <li> [03/2022] Two papers accepted in <b>CVPR'22</b>.</li>
+  <li> [08/2021] Join Professor <a href="http://shubhtuls.github.io/">Shubham Tulsiani</a>'s group at CMU RI!</li>
+  <li> [05/2021] Start my research internship at <a href="https://research.snap.com/team/category/creative-vision/">Snap Research</a> working with
+    <a href="http://hsinyinglee.com/">Hsin-Ying Lee</a> and <a href="http://www.stulyakov.com/">Sergey Tulyakov</a>.</li>
+  <li> [02/2021] Start my graduate study at <b>CMU RI</b>!</li>
+  <li> [07/2020] One paper accepted at <b>ECCV'20</b>.</li>
+  <li> [09/2022] Start my visiting in <a href="http://vllab.ucmerced.edu/">VLLab</a> at UC Merced working with
+      <a href="https://faculty.ucmerced.edu/mhyang/">Prof. Ming-Hsuan Yang</a>.</li>
+      
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+  <tr><td><sectionheading>&nbsp;&nbsp;Publications</sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+
+  <tr>
+    <td width="33%" valign="top" align="center">
+        <a href="#">
+        <!-- <img src="images/generative3d_teaser.png" alt="sym" width="300" height="200" style="border-radius:15px"> -->
+        <video autoplay loop muted playsinline width="300" height="200" style="border-radius:1px">
+          <source src="./gen3d_teaser_thumbnail.mp4" type="video/mp4">
+        </video>
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="#" id="AutoSDF22">
+
+            <heading>AutoSDF: Shape Priors for 3D Completion, Reconstruction and Generation</heading></a>
+            <br>
+            <u><b>Yen-Chi Cheng*</b></u>, Paritosh Mittal*, Maneesh Singh, Shubham Tulsiani.
+            <br>
+            CVPR 2022
+            <br>
+            (* indicates equal contribution)
+        </p>
+
+        <div class="paper" id="autosdf22">
+        <a href="https://yccyenchicheng.github.io/AutoSDF/">webpage</a> |
+        <a href="javascript:toggleblock('autosdf22_abs')">abstract</a> |
+        <a shape="rect" href="javascript:togglebib('autosdf22')" class="togglebib">bibtex</a> |
+        <a href="http://arxiv.org/abs/2203.09516">arXiv</a> |
+        <a href="https://github.com/yccyenchicheng/AutoSDF/">code</a>
+
+        <p align="justify">
+            <i id="autosdf22_abs">
+              Powerful priors allow us to perform inference with insufficient information. In this paper,
+              we propose an autoregressive prior for 3D shapes to solve multimodal 3D tasks such as
+              shape completion, reconstruction, and generation. We model the distribution over 3D shapes
+              as a non-sequential autoregressive distribution over a discretized, low-dimensional, symbolic
+              grid-like latent representation of 3D shapes.
+              We demonstrate that the proposed prior is able to represent distributions over 3D shape spaces
+              conditioned over information from an arbitrary set of spatially anchored query locations.
+              This enables us to represent distributions over 3D shapes conditioned on information from an
+              arbitrary set of spatially anchored query locations and thus perform shape completion in such
+              arbitrary settings (\eg generating a complete chair given only a view of the back leg).
+              We also show that the learned autoregressive prior can be leveraged for conditional tasks such as
+              single-view reconstruction and language-based generation. This is achieved by learning task-specific
+              `naive' conditionals which can be approximated by light-weight models trained on minimal paired data.
+              We validate the effectiveness of the proposed method using both quantitative and qualitative evaluation
+              and show that the proposed method outperforms the specialized state-of-the-art methods trained for
+              individual tasks.
+            </i>
+        </p>
+
+        <pre xml:space="preserve">
+          @inproceedings{autosdf2022,
+            author = {
+                    Mittal, Paritosh and
+                    Cheng, Yen-Chi and
+                    Singh, Maneesh and
+                    Tulsiani, Shubham
+                    },
+            title = {{AutoSDF}: Shape Priors for 3D Completion, Reconstruction and Generation},
+            booktitle = {CVPR},
+            year = {2022}
+          }
+        </pre>
+
+        </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="33%" valign="top" align="center">
+        <a href="#">
+        <img src="images/inout_thumbnail.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="#" id="InOut21">
+
+            <heading>In&Out: Diverse Image Outpainting via GAN Inversion</heading></a>
+            <br>
+            <u><b>Yen-Chi Cheng</b></u>, Chieh Hubert Lin, Hsin-Ying Lee, Jian Ren, Sergey Tulyakov, Ming-Hsuan Yang
+            <br>
+            <!-- Under review -->
+            CVPR 2022
+        </p>
+
+        <div class="paper" id="inout21">
+        <a href="https://yccyenchicheng.github.io/InOut/">webpage </a> |
+        <a href="javascript:toggleblock('inout21_abs')">abstract</a> |
+        <a shape="rect" href="javascript:togglebib('inout21')" class="togglebib">bibtex</a> |
+        <a href="https://arxiv.org/abs/2104.00675">arXiv</a> |
+        <a href="https://github.com/yccyenchicheng/InOut">code (coming soon)</a>
+
+        <p align="justify">
+            <i id="inout21_abs">
+              Image outpainting seeks for a semantically consistent extension of the input image beyond its available content.
+              Compared to inpainting -- filling in missing pixels in a way coherent with the neighboring pixels -- outpainting
+              can be achieved in more diverse ways since the problem is less constrained by the surrounding pixels.
+              Existing image outpainting methods pose the problem as a conditional image-to-image translation task,
+              often generating repetitive structures and textures by replicating the content available in the input image.
+              In this work, we formulate the problem from the perspective of inverting generative adversarial networks.
+              Our generator renders micro-patches conditioned on their joint latent code as well as their individual positions in the image.
+              To outpaint an image, we seek for multiple latent codes not only recovering available patches but also
+              synthesizing diverse outpainting by patch-based generation. This leads to richer structure and content in the outpainted regions.
+              Furthermore, our formulation allows for outpainting conditioned on the categorical input, thereby enabling flexible user controls.
+              Extensive experimental results demonstrate the proposed method performs favorably against existing in- and outpainting methods,
+              featuring higher visual quality and diversity.
+            </i>
+        </p>
+
+        <pre xml:space="preserve">
+        @article{cheng2021inout,
+            author = {
+                    Cheng, Yen-Chi and
+                    Lin, Chieh Hubert and
+                    Lee, Hsin-Ying and
+                    Ren, Jian and
+                    Tulyakov, Sergey and
+                    Yang, Ming-Hsuan
+                  },
+            title = {{In&Out}: Diverse Image Outpainting via GAN Inversion},
+            journal={arXiv preprint arXiv:2104.00675},
+            year = {2021}
+            }
+        </pre>
+
+        </div>
+    </td>
+  </tr>
+
+
+  <tr>
+    <td width="33%" valign="top" align="center">
+        <a href="#">
+        <img src="images/infinityGAN.png" alt="sym" width="300" height="200" style="border-radius:15px">
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="#" id="InOut21">
+
+            <heading>InfinityGAN: Towards Infinite-Resolution Image Synthesis</heading></a>
+            <br>
+            Chieh Hubert Lin, Hsin-Ying Lee, <u><b>Yen-Chi Cheng</b></u>, Sergey Tulyakov, Ming-Hsuan Yang
+            <br>
+            <!-- Under review -->
+            ICLR 2022
+        </p>
+
+        <div class="paper" id="infinitygan21">
+        <a href="https://hubert0527.github.io/infinityGAN/">webpage </a> |
+        <a href="javascript:toggleblock('infinitygan21_abs')">abstract</a> |
+        <a shape="rect" href="javascript:togglebib('infinitygan21')" class="togglebib">bibtex</a> |
+        <a href="https://arxiv.org/abs/2104.03963">arXiv</a> |
+        <a href="https://github.com/hubert0527/infinityGAN">code (coming soon)</a>
+
+        <p align="justify">
+            <i id="infinitygan21_abs">
+              Image outpainting seeks for a semantically consistent extension of the input image beyond its available content.
+              Compared to inpainting -- filling in missing pixels in a way coherent with the neighboring pixels -- outpainting
+              can be achieved in more diverse ways since the problem is less constrained by the surrounding pixels.
+              Existing image outpainting methods pose the problem as a conditional image-to-image translation task,
+              often generating repetitive structures and textures by replicating the content available in the input image.
+              In this work, we formulate the problem from the perspective of inverting generative adversarial networks.
+              Our generator renders micro-patches conditioned on their joint latent code as well as their individual positions in the image.
+              To outpaint an image, we seek for multiple latent codes not only recovering available patches but also
+              synthesizing diverse outpainting by patch-based generation. This leads to richer structure and content in the outpainted regions.
+              Furthermore, our formulation allows for outpainting conditioned on the categorical input, thereby enabling flexible user controls.
+              Extensive experimental results demonstrate the proposed method performs favorably against existing in- and outpainting methods,
+              featuring higher visual quality and diversity.
+            </i>
+        </p>
+
+        <pre xml:space="preserve">
+        @article{lin2021infinity,
+            author = {
+                    Lin, Chieh Hubert and
+                    Le, Hsin-Ying and
+                    Cheng, Yen-Chi and
+                    Tulyakov, Sergey and
+                    Yang, Ming-Hsuan
+                  },
+            title = {{InfinityGAN}: Towards Infinite-Resolution Image Synthesis},
+            journal={arXiv preprint arXiv:2104.03963},
+            year = {2021}
+            }
+        </pre>
+
+        </div>
+    </td>
+  </tr>
+
+  <tr>
+    <td width="33%" valign="top" align="center">
+        <a href="#">
+        <!-- <img src="images/coming_soon.jpg" alt="sym" width="70%" height="30%" style="border-radius:15px"> -->
+        <!-- <img src="images/segvae_teaser.png" alt="sym" width="100%" height="15%" style="border-radius:15px"> -->
+        <!-- <img src="images/segvae_teaser_v1.png" alt="sym" width="100%" height="100%" style="border-radius:15px"> -->
+        <img src="images/segvae_teaser_v1.png" alt="sym" width="200" height="200" style="border-radius:15px">
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="#" id="SegVAE20">
+
+            <heading>Controllable Image Synthesis via SegVAE</heading></a>
+            <br>
+            <u><b>Yen-Chi Cheng</b></u>, Hsin-Ying Lee, Min Sun, Ming-Hsuan Yang
+            <br>
+            <!-- Under review -->
+            ECCV 2020
+        </p>
+
+        <div class="paper" id="segvae20">
+        <a href="https://yccyenchicheng.github.io/SegVAE/">webpage </a> |
+        <a href="javascript:toggleblock('segvae20_abs')">abstract</a> |
+        <a shape="rect" href="javascript:togglebib('segvae20')" class="togglebib">bibtex</a> |
+        <a href="https://arxiv.org/abs/2007.08397">arXiv</a> |
+        <a href="https://github.com/yccyenchicheng/SegVAE">code</a>
+
+        <p align="justify">
+            <i id="segvae20_abs">
+              Flexible user controls are desirable for content creation and image editing. A semantic map is commonly used
+	      intermediate representation for conditional image generation. Compared to the operation on raw RGB pixels,
+	      the semantic map enables simpler user modification. In this work, we specifically target at generating
+	      semantic maps given a label-set consisting of desired categories. The proposed framework, SegVAE,
+	      synthesizes semantic maps in an iterative manner using conditional variational autoencoder. Quantitative
+	      and qualitative experiments demonstrate that the proposed model can generate realistic and diverse semantic
+	      maps. We also apply an off-the-shelf image-to-image translation model to generate realistic RGB images to
+	      better understand the quality of the synthesized semantic maps. Furthermore, we showcase several real-world
+	      image-editing applications including object removal, object insertion, and object replacement.
+            </i>
+        </p>
+
+        <pre xml:space="preserve">
+        @inproceedings{cheng2020segvae,
+            Author = {
+            Cheng, Yen-Chi and
+            Lee, Hsin-Ying and
+            Sun, Min and
+            Yang, Ming-Hsuan
+            },
+            Title = {Controllable Image Synthesis via {SegVAE}},
+            Booktitle = {ECCV},
+            Year = {2020}
+           }
+        </pre>
+
+        </div>
+    </td>
+  </tr>
+
+
+
+  <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="https://zswang666.github.io/P2PVG-Project-Page">
+          <!-- <img src="images/iccv19.gif" alt="sym" width="100%" height="90%" style="border-radius:15px"></a> -->
+          <img src="images/iccv19.gif" alt="sym" width="200" height="200" style="border-radius:15px"></a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="https://zswang666.github.io/P2PVG-Project-Page" id="ICCV19">
+              <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+              <heading>Point-to-Point Video Generation</heading></a>
+              <br>
+              <u><b>Yen-Chi Cheng*</b></u>, Tsun-Hsuan Wang*, Chieh Hubert Lin, Hwann-Tzong Chen, Min Sun
+              <br>
+              ICCV 2019
+              <br>
+              (* indicates equal contribution)
+              <!-- ICCV 2019 , Seoul -->
+          </p>
+
+          <div class="paper" id="iccv19">
+          <a href="https://zswang666.github.io/P2PVG-Project-Page/">webpage</a> |
+          <a href="javascript:toggleblock('iccv19_abs')">abstract</a> |
+          <a shape="rect" href="javascript:togglebib('iccv19')" class="togglebib">bibtex</a> |
+          <a href="https://arxiv.org/abs/1904.02912">arXiv</a> |
+          <a href="https://github.com/yccyenchicheng/p2pvg">code</a>
+
+          <p align="justify">
+              <i id="iccv19_abs">
+                  While image synthesis achieves tremendous breakthroughs (e.g., generating realistic faces), video generation is
+                  less explored and harder to control, which limits its applications in the real world. For instance, video editing
+                  requires temporal coherence across multiple clips and thus poses both start and end constraints within a video sequence.
+                  We introduce point-to-point video generation that controls the generation process with two control points: the targeted
+                  start- and end-frames. The task is challenging since the model not only generates a smooth transition of frames but also
+                  plans ahead to ensure that the generated end-frame conforms to the targeted end-frame for videos of various lengths.
+                  We propose to maximize the modified variational lower bound of conditional data likelihood under a skip-frame training strategy.
+                  Our model can generate end-frame-consistent sequences without loss of quality and diversity. We evaluate our method through
+                  extensive experiments on Stochastic Moving MNIST, Weizmann Action, Human3.6M, and BAIR Robot Pushing under a series of scenarios.
+                  The qualitative results showcase the effectiveness and merits of point-to-point generation.
+              </i>
+          </p>
+
+          <pre xml:space="preserve">
+          @inproceedings{wang2019p2pvg,
+              Author = {Wang, Tsun-Hsuan and
+                      Cheng, Yen-Chi and
+                      Lin, Chieh Hubert and
+                      Chen, Hwann-Tzong and
+                      Sun, Min},
+              Title = {Point-to-Point Video Generation},
+              Booktitle = {ICCV},
+              Year = {2019}
+              }
+          </pre>
+
+          </div>
+      </td>
+  </tr>
+
+    <tr>
+        <td width="33%" valign="top" align="center">
+            <a href="#">
+            <!-- <img src="images/neuripsw18.png" alt="sym" width="100%" height="15%" style="border-radius:15px"></a> -->
+            <img src="images/neuripsw18.png" alt="sym" width="200" height="200" style="border-radius:15px"></a>
+        </td>
+
+        <td width="67%" valign="top">
+            <p>
+                <a href="https://arxiv.org/abs/1904.03086" id="NEURIPSW18">
+                <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+                <heading>Radiotherapy Target Contouring with Convolutional Gated Graph Neural Network</heading></a>
+                <br>
+                Chun-Hung Chao, <u><b>Yen-Chi Cheng</b></u>, Hsien-Tzu Cheng, Chi-Wen Huang, Tsung-Ying Ho, Chen-Kan Tseng, Le Lu, Min Sun
+                <br>
+                NeurIPS 2018 Workshop <b>(Spotlight)</b>
+                <br>
+            </p>
+
+            <div class="paper" id="neuripsw18">
+            <!-- <a href="https://zswang666.github.io/P2PVG-Project-Page/">webpage</a> | -->
+            <a href="javascript:toggleblock('neuripsw18_abs')">abstract</a> |
+            <a shape="rect" href="javascript:togglebib('neuripsw18')" class="togglebib">bibtex</a> |
+            <a href="https://arxiv.org/abs/1904.03086">arXiv</a>
+            <!-- <a href="https://github.com/yccyenchicheng/p2pvg">code</a> -->
+
+            <p align="justify">
+                <i id='neuripsw18_abs'>
+                    Tomography medical imaging is essential in the clinical workflow of modern cancer radiotherapy. Radiation oncologists identify
+                    cancerous tissues, applying delineation on treatment regions throughout all image slices. This kind of task is often formulated
+                    as a volumetric segmentation task by means of 3D convolutional networks with considerable computational cost. Instead, inspired
+                    by the treating methodology of considering meaningful information across slices, we used Gated Graph Neural Network to frame this
+                    problem more efficiently. More specifically, we propose convolutional recurrent Gated Graph Propagator (GGP) to propagate high-level
+                    information through image slices, with learnable adjacency weighted matrix. Furthermore, as physicians often investigate a few
+                    specific slices to refine their decision, we model this slice-wise interaction procedure to further improve our segmentation result.
+                    This can be set by editing any slice effortlessly as updating predictions of other slices using GGP. To evaluate our method, we collect
+                    an Esophageal Cancer Radiotherapy Target Treatment Contouring dataset of 81 patients which includes tomography images with radiotherapy
+                    target. On this dataset, our convolutional graph network produces state-of-the-art results and outperforms the baselines. With the addition
+                    of interactive setting, performance is improved even further. Our method has the potential to be easily applied to diverse kinds of medical
+                    tasks with volumetric images. Incorporating both the ability to make a feasible prediction and to consider the human interactive input,
+                    the proposed method is suitable for clinical scenarios.
+                </i>
+            </p>
+
+            <pre xml:space="preserve">
+            @article{chao18radiotherapy,
+                title     = {Radiotherapy Target Contouring with Convolutional Gated Graph Neural
+                             Network},
+                author    = {Chao, Chun-Hung and Cheng, Yen-Chi and Cheng, Hsien-Tzu and Huang, Chi-Wen and
+                             Ho, Tsung-Ying and Tseng, Chen-Kan
+                            Lu, Le and Sun, Min},
+                journal   = {arXiv preprint arXiv:1904.02912},
+                year      = {2019},
+                }
+            </pre>
+
+            </div>
+        </td>
+    </tr>
+
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+        <tr><td><sectionheading>&nbsp;&nbsp;Projects</sectionheading></td></tr>
+</table>
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
+
+    <tr>
+        <td width="50%" valign="top" align="center">
+            <a href="#">
+            <!-- <img src="images/pytorch_videovae.png" alt="sym" width="100%" height="40%" style="border-radius:15px"></a> -->
+            <img src="images/pytorch_videovae.png" alt="sym" width="350" height="200" style="border-radius:15px"></a>
+        </td>
+
+        <td width="50%" valign="top">
+            <p>
+                <a href="https://github.com/yccyenchicheng/pytorch-VideoVAE" id="PYTORCHVIDEOVAE">
+                <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+                <heading>PyTorch VideoVAE</heading></a>
+                <br>
+                A PyTorch implementation of a video generation method with attribute control using VAE by
+                <a href="https://eccv2018.org/openaccess/content_ECCV_2018/papers/Jiawei_He_Probabilistic_Video_Generation_ECCV_2018_paper.pdf" >He et al., ECCV 2018</a>.
+                <br>
+                | <a href="https://github.com/yccyenchicheng/pytorch-VideoVAE">code</a> |
+            </p>
+
+        </td>
+    </tr>
+
+    <tr>
+        <td width="50%" valign="top" align="center">
+            <a href="#">
+            <!-- <img src="images/pytorch_seginpaint.png" alt="sym" width="100%" height="40%" style="border-radius:15px"></a> -->
+            <img src="images/pytorch_seginpaint.png" alt="sym" width="350" height="200" style="border-radius:15px"></a>
+        </td>
+
+        <td width="50%" valign="top">
+            <p>
+                <a href="https://github.com/yccyenchicheng/pytorch-SegInpaint" id="PYTORCHSEGINPAINT">
+                <!-- <img src="images/new.png" alt="[NEW]" width="6%" style="border-style: none"> -->
+                <heading>PyTorch SegInpaint</heading></a>
+                <br>
+                A PyTorch implementation of an inpainting method based on
+                <a href="https://arxiv.org/abs/1805.03356">Song et al., BMVC 2018</a>.
+                <br>
+                | <a href="https://github.com/yccyenchicheng/pytorch-SegInpaint">code</a> |
+            </p>
+
+        </td>
+    </tr>
+
+<table width="100%" align="center" border="0" cellpadding="10">
+  <tr>
+    <td>
+      <sectionheading>&nbsp;&nbsp;Professional Activity</sectionheading>
+        <ul>
+          <li> Reviewer: ICML 2020, CVPR 2021, ICCV 2021, NeurIPS 2021, AAAI 2022</li>
+        </ul>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellpadding="10">
+  <tr>
+    <td>
+      <sectionheading>&nbsp;&nbsp;Awards</sectionheading>
+        <ul>
+          <li> ICCV 2019 Travel Award </li>
+        </ul>
+    </td>
+  </tr>
+</table>
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+    <tr><td><br><p align="center"><font size="2">
+    Template from this <a href="https://jonbarron.info/">awesome website</a>.
+    </font></p></td></tr>
+
+</table>
+  </td> </tr>
+</table>
+
+<script xml:space="preserve" language="JavaScript">
+hideallbibs();
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('autosdf22_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('inout21_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('infinitygan21_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+  hideblock('segvae20_abs');
+</script>
+
+
+<script xml:space="preserve" language="JavaScript">
+hideblock('iccv19_abs');
+</script>
+
+<script xml:space="preserve" language="JavaScript">
+hideblock('neuripsw18_abs');
+</script>
+
+</script>
