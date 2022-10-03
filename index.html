@@ -188,7 +188,7 @@
               BMVC 2022
           </p>
 
-          <div class="paper" id="inout21">
+          <div class="paper" id="bmvc22">
           <a href="javascript:toggleblock('bmvc22')">abstract</a> |
 
           <p align="justify">
@@ -201,6 +201,39 @@
       </td>
     </tr>
 
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
+          <img src="images/neurips22.png" alt="sym" width="300" height="200" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="neurips22">
+
+              <heading>Neural Matching Fields: Implicit Representation of Matching Fields for Visual Correspondence</heading></a>
+              <br>
+              Sunghwan Hong, Jisu Nam, Seokju Cho, Susung Hong, <u><b>Sangryul Jeon</b></u>, Dongbo Min, Seungryong Kim
+              <br>
+              <!-- Under review -->
+              NeurIPS 2022
+          </p>
+
+          <div class="paper" id="neurips22">
+          <a href="javascript:toggleblock('neurips22')">abstract</a> |
+
+          <p align="justify">
+              <i id="neurips22">
+                Existing pipelines of semantic correspondence commonly include extracting high-level semantic features for the invariance against intra-class variations and background clutters. This architecture, however, inevitably results in a low-resolution matching field that additionally requires an ad-hoc interpolation process as a post-processing for converting it into a high-resolution one, certainly limiting the overall performance of matching results. To overcome this, inspired by recent success of implicit neural representation, we present a novel method for semantic correspondence, called neural matching field (NeMF). However, complicacy and high-dimensionality of a 4D matching field are the major hindrances, which we propose a cost embedding network to process a coarse cost volume to use as a guidance for establishing high-precision matching field through the following fully-connected network. Nevertheless, learning a high-dimensional matching field remains challenging mainly due to computational complexity, since a naive exhaustive inference would require querying from all pixels in the 4D space to infer pixel-wise correspondences. To overcome this, we propose adequate training and inference procedures, which in the training phase, we randomly sample matching candidates and in the inference phase, we iteratively performs PatchMatch-based inference and coordinate optimization at test time. With these combined, competitive results are attained on several standard benchmarks for semantic correspondence.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
+
+
 
     <script xml:space="preserve" language="JavaScript">
     hideallbibs();
@@ -208,6 +241,10 @@
 
     <script xml:space="preserve" language="JavaScript">
       hideblock('bmvc22');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
+      hideblock('neurips22');
     </script>
 
 </body>
