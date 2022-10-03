@@ -374,6 +374,75 @@
       </td>
     </tr>
 
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
+          <img src="images/eccv20.png" alt="sym" width="300" height="182" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="eccv20">
+
+              <heading>Guided Semantic Flow</heading></a>
+              <br>
+              <u><b>Sangryul Jeon</b></u>, Dongbo Min, Seungryong Kim, Kwanghoon Sohn
+              <br>
+              <!-- Under review -->
+              <b>ECCV 2020</b>
+
+          </p>
+
+          <div class="paper" id="eccv20">
+          <a href="javascript:toggleblock('eccv20_abs')">abstract</a> |
+          <a href="https://link.springer.com/chapter/10.1007/978-3-030-58604-1_38">paper</a>
+
+          <p align="justify">
+              <i id="eccv20_abs">
+                Establishing dense semantic correspondences requires dealing with large geometric variations caused by the unconstrained setting of images. To address such severe matching ambiguities, we introduce a novel approach, called guided semantic flow, based on the key insight that sparse yet reliable matches can effectively capture non-rigid geometric variations, and these confident matches can guide adjacent pixels to have similar solution spaces, reducing the matching ambiguities significantly. We realize this idea with learning-based selection of confident matches from an initial set of all pairwise matching scores and their propagation by a new differentiable upsampling layer based on moving least square concept. We take advantage of the guidance from reliable matches to refine the matching hypotheses through Gaussian parametric model in the subsequent matching pipeline. With the proposed method, state-of-the-art performance is attained on several standard benchmarks for semantic correspondence.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
+          <img src="images/iccv19.png" alt="sym" width="300" height="182" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="iccv19">
+
+              <heading>Joint Learning of Semantic Alignment and Object Landmark Detection</heading></a>
+              <br>
+              <u><b>Sangryul Jeon</b></u>, Dongbo Min, Seungryong Kim, Kwanghoon Sohn
+              <br>
+              <!-- Under review -->
+              <b>ICCV 2019</b>
+
+          </p>
+
+          <div class="paper" id="iccv19">
+          <a href="javascript:toggleblock('iccv19_abs')">abstract</a> |
+          <a href="https://openaccess.thecvf.com/content_ICCV_2019/html/Jeon_Joint_Learning_of_Semantic_Alignment_and_Object_Landmark_Detection_ICCV_2019_paper.html">paper</a>
+
+          <p align="justify">
+              <i id="iccv19_abs">
+                Convolutional neural networks (CNNs) based approaches for semantic alignment and object landmark detection have improved their performance significantly. Current efforts for the two tasks focus on addressing the lack of massive training data through weakly- or unsupervised learning frameworks. In this paper, we present a joint learning approach for obtaining dense correspondences and discovering object landmarks from semantically similar images. Based on the key insight that the two tasks can mutually provide supervisions to each other, our networks accomplish this through a joint loss function that alternatively imposes a consistency constraint between the two tasks, thereby boosting the performance and addressing the lack of training data in a principled manner. To the best of our knowledge, this is the first attempt to address the lack of training data for the two tasks through the joint learning. To further improve the robustness of our framework, we introduce a probabilistic learning formulation that allows only reliable matches to be used in the joint learning process. With the proposed method, state-of-the-art performance is attained on several benchmarks for semantic matching and landmark detection.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
+
+
     <table width="100%" align="center" border="0" cellpadding="10">
       <tr>
         <td>
@@ -384,6 +453,7 @@
         </td>
       </tr>
     </table>
+
 
 
     <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
@@ -418,6 +488,14 @@
 
     <script xml:space="preserve" language="JavaScript">
       hideblock('cvpr21_abs');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
+      hideblock('eccv20_abs');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
+      hideblock('iccv19_abs');
     </script>
 
 </body>
