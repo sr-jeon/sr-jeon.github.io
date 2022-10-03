@@ -156,8 +156,8 @@
   <tr><td>
     <sectionheading>&nbsp;&nbsp;News</sectionheading>
     <ul>
-      <li> [10/2022] One paper accepted by <b>BMVC'22</b></li>
-      <li> [09/2022] One paper accepted by <b>NeurIPS'22</b></li>
+      <li> [10/2022] One paper accepted by <b>BMVC 2022</b></li>
+      <li> [09/2022] One paper accepted by <b>NeurIPS 2022</b></li>
       <li> [03/2022] Joined <b>UC Berkeley / ICSI</b> as a postdoctoral scholar</li>
     </ul>
   </td></tr>
@@ -266,6 +266,39 @@
       </td>
     </tr>
 
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
+          <img src="images/tpami21.png" alt="sym" width="300" height="210" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="tpami21">
+
+              <heading>Pyramidal Semantic Correspondence Networks</heading></a>
+              <br>
+              <u><b>Sangryul Jeon</b></u>, Seungryong Kim, Dongbo Min, Kwanghoon Sohn
+              <br>
+              <!-- Under review -->
+              <b>TPAMI 2021</b>
+          </p>
+
+          <div class="paper" id="tpami21">
+          <a href="javascript:toggleblock('tpami21_abs')">abstract</a> |
+          <a href="">paper</a>
+
+          <p align="justify">
+              <i id="tpami21_abs">
+                This paper presents a deep architecture, called pyramidal semantic correspondence networks (PSCNet), that estimates locally-varying affine transformation fields across semantically similar images. To deal with large appearance and shape variations that commonly exist among different instances within the same object category, we leverage a pyramidal model where the affine transformation fields are progressively estimated in a coarse-to-fine manner so that the smoothness constraint is naturally imposed. Different from the previous methods which directly estimate global or local deformations, our method first starts to estimate the transformation from an entire image and then progressively increases the degree of freedom of the transformation by dividing coarse cell into finer ones. To this end, we propose two spatial pyramid models by dividing an image in a form of quad-tree rectangles or into multiple semantic elements of an object. Additionally, to overcome the limitation of insufficient training data, a novel weakly-supervised training scheme is introduced that generates progressively evolving supervisions through the spatial pyramid models by leveraging a correspondence consistency across image pairs. Extensive experimental results on various benchmarks including TSS, Proposal Flow-WILLOW, Proposal Flow-PASCAL, Caltech-101, and SPair-71k demonstrate that the proposed method outperforms the lastest methods for dense semantic correspondence.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
+
 
 
     <script xml:space="preserve" language="JavaScript">
@@ -282,6 +315,10 @@
 
     <script xml:space="preserve" language="JavaScript">
       hideblock('eccvw22_abs');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
+      hideblock('tpami21_abs');
     </script>
 
 </body>
