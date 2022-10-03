@@ -172,7 +172,7 @@
     <tr>
       <td width="33%" valign="top" align="center">
           <a href="#">
-          <img src="images/bmvc22.png" alt="sym" width="300" height="200" style="border-radius:15px">
+          <img src="images/bmvc22.png" alt="sym" width="1000" height="800" style="border-radius:15px">
           </a>
       </td>
 
@@ -189,10 +189,10 @@
           </p>
 
           <div class="paper" id="bmvc22">
-          <a href="javascript:toggleblock('bmvc22')">abstract</a> |
+          <a href="javascript:toggleblock('bmvc22_abs')">abstract</a> |
 
           <p align="justify">
-              <i id="bmvc22">
+              <i id="bmvc22_abs">
                 Semantic correspondence is playing an increasingly important role in photorealistic style transfer, especially on objects with prior structural patterns like faces and cars. Unlike traditional methods that are blind to object/non-object regions and spatial correspondence between objects, we propose a new model called correspondence-driven object appearance transfer (COAT), which leverages correspondence to spatially align texture features to content features at multiple scales. Our model does not require extra supervision like semantic segmentation or body parsing and can be adapted to any given generic object category. More importantly, our multi-scale strategy achieves richer texture transfer, while at the same time preserving the spatial structure of objects in the content image. We further propose the correspondence contrastive loss (CCL) with hard negative mining during the training, boosting appearance transfer with improved disentanglement of structural and textural features. Exhaustive experimental evaluation on various objects demonstrates our superior robustness and visual quality as compared to state-of-the-art works.
               </i>
           </p>
@@ -221,10 +221,10 @@
           </p>
 
           <div class="paper" id="neurips22">
-          <a href="javascript:toggleblock('neurips22')">abstract</a> |
+          <a href="javascript:toggleblock('neurips22_abs')">abstract</a> |
 
           <p align="justify">
-              <i id="neurips22">
+              <i id="neurips22_abs">
                 Existing pipelines of semantic correspondence commonly include extracting high-level semantic features for the invariance against intra-class variations and background clutters. This architecture, however, inevitably results in a low-resolution matching field that additionally requires an ad-hoc interpolation process as a post-processing for converting it into a high-resolution one, certainly limiting the overall performance of matching results. To overcome this, inspired by recent success of implicit neural representation, we present a novel method for semantic correspondence, called neural matching field (NeMF). However, complicacy and high-dimensionality of a 4D matching field are the major hindrances, which we propose a cost embedding network to process a coarse cost volume to use as a guidance for establishing high-precision matching field through the following fully-connected network. Nevertheless, learning a high-dimensional matching field remains challenging mainly due to computational complexity, since a naive exhaustive inference would require querying from all pixels in the 4D space to infer pixel-wise correspondences. To overcome this, we propose adequate training and inference procedures, which in the training phase, we randomly sample matching candidates and in the inference phase, we iteratively performs PatchMatch-based inference and coordinate optimization at test time. With these combined, competitive results are attained on several standard benchmarks for semantic correspondence.
               </i>
           </p>
@@ -240,11 +240,11 @@
     </script>
 
     <script xml:space="preserve" language="JavaScript">
-      hideblock('bmvc22');
+      hideblock('bmvc22_abs');
     </script>
 
     <script xml:space="preserve" language="JavaScript">
-      hideblock('neurips22');
+      hideblock('neurips22_abs');
     </script>
 
 </body>
