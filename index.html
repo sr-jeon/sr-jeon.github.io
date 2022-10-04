@@ -445,6 +445,74 @@
     <tr>
       <td width="33%" valign="top" align="center">
           <a href="#">
+          <img src="images/cvpr19.png" alt="sym" width="300" height="150" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="cvpr19">
+
+              <heading>Semantic Attribute Matching Networks</heading></a>
+              <br>
+              Seungryong Kim, Dongbo Min, Somi Jeong, Sunok Kim, <u><b>Sangryul Jeon</b></u>, Kwanghoon Sohn
+              <br>
+              <!-- Under review -->
+              <b>CVPR 2019</b>
+
+          </p>
+
+          <div class="paper" id="cvpr19">
+          <a href="javascript:toggleblock('cvpr19_abs')">abstract</a> |
+          <a href="https://openaccess.thecvf.com/content_CVPR_2019/html/Kim_Semantic_Attribute_Matching_Networks_CVPR_2019_paper.html">paper</a>
+
+          <p align="justify">
+              <i id="cvpr19_abs">
+                We present semantic attribute matching networks (SAM-Net) for jointly establishing correspondences and transferring attributes across semantically similar images, which intelligently weaves the advantages of the two tasks while overcoming their limitations. SAM-Net accomplishes this through an iterative process of establishing reliable correspondences by reducing the attribute discrepancy between the images and synthesizing attribute transferred images using the learned correspondences. To learn the networks using weak supervisions in the form of image pairs, we present a semantic attribute matching loss based on the matching similarity between an attribute transferred source feature and a warped target feature. With SAM-Net, the state-of-the-art performance is attained on several benchmarks for semantic matching and attribute transfer.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
+          <img src="images/neurips18.png" alt="sym" width="300" height="215" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="neurips18">
+
+              <heading>Recurrent Transformer Networks for Semantic Correspondence</heading></a>
+              <br>
+              Seungryong Kim, Stephen Lin, <u><b>Sangryul Jeon</b></u>, Dongbo Min, Kwanghoon Sohn
+              <br>
+              <!-- Under review -->
+              <b>NeurIPS 2018</b> - Spotlight presentation
+
+          </p>
+
+          <div class="paper" id="neurips18">
+          <a href="javascript:toggleblock('neurips18_abs')">abstract</a> |
+          <a href="https://proceedings.neurips.cc/paper/2018/hash/e4a93f0332b2519177ed55741ea4e5e7-Abstract.html">paper</a>
+
+          <p align="justify">
+              <i id="neurips18_abs">
+                We present recurrent transformer networks (RTNs) for obtaining dense correspondences between semantically similar images. Our networks accomplish this through an iterative process of estimating spatial transformations between the input images and using these transformations to generate aligned convolutional activations. By directly estimating the transformations between an image pair, rather than employing spatial transformer networks to independently normalize each individual image, we show that greater accuracy can be achieved. This process is conducted in a recursive manner to refine both the transformation estimates and the feature representations. In addition, a technique is presented for weakly-supervised training of RTNs that is based on a proposed classification loss. With RTNs, state-of-the-art performance is attained on several benchmarks for semantic correspondence.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
           <img src="images/eccv18.png" alt="sym" width="300" height="132" style="border-radius:15px">
           </a>
       </td>
@@ -476,6 +544,39 @@
       </td>
     </tr>
 
+    <tr>
+      <td width="33%" valign="top" align="center">
+          <a href="#">
+          <img src="images/cvpr17.png" alt="sym" width="300" height="210" style="border-radius:15px">
+          </a>
+      </td>
+
+      <td width="67%" valign="top">
+          <p>
+              <a href="#" id="cvpr17">
+
+              <heading>FCSS: Fully Convolutional Self-Similarity for Dense Semantic Correspondence</heading></a>
+              <br>
+              Seungryong Kim, Dongbo Min, Bumsub Ham, <u><b>Sangryul Jeon</b></u>, Stephen Lin, Kwanghoon Sohn
+              <br>
+              <!-- Under review -->
+              <b>CVPR 2017</b>
+
+          </p>
+
+          <div class="paper" id="cvpr17">
+          <a href="javascript:toggleblock('cvpr17_abs')">abstract</a> |
+          <a href="https://openaccess.thecvf.com/content_cvpr_2017/html/Kim_FCSS_Fully_Convolutional_CVPR_2017_paper.html">paper</a>
+
+          <p align="justify">
+              <i id="cvpr17_abs">
+                We present a descriptor, called fully convolutional self-similarity (FCSS), for dense semantic correspondence. To robustly match points among different instances within the same object class, we formulate FCSS using local self-similarity (LSS) within a fully convolutional network. In contrast to existing CNN-based descriptors, FCSS is inherently insensitive to intra-class appearance variations because of its LSS-based structure, while maintaining the precise localization ability of deep neural networks. The sampling patterns of local structure and the self-similarity measure are jointly learned within the proposed network in an end-to-end and multi-scale manner. As training data for semantic correspondence is rather limited, we propose to leverage object candidate priors provided in existing image datasets and also correspondence consistency between object pairs to enable weakly-supervised learning. Experiments demonstrate that FCSS outperforms conventional handcrafted descriptors and CNN-based descriptors on various benchmarks.
+              </i>
+          </p>
+
+          </div>
+      </td>
+    </tr>
 
     <table width="100%" align="center" border="0" cellpadding="10">
       <tr>
@@ -533,7 +634,19 @@
     </script>
 
     <script xml:space="preserve" language="JavaScript">
+      hideblock('cvpr19_abs');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
+      hideblock('neurips18_abs');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
       hideblock('eccv18_abs');
+    </script>
+
+    <script xml:space="preserve" language="JavaScript">
+      hideblock('cvpr17_abs');
     </script>
 
 </body>
