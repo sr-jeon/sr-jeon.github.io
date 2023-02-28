@@ -173,6 +173,72 @@
 </table>
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="15">
 
+  <tr>
+    <td width="33%" valign="top" align="center">
+        <a href="#">
+        <img src="images/cvpr23.jpg" alt="sym" width="300" height="160" style="border-radius:15px">
+        </a>
+    </td>
+
+    <td width="67%" valign="top">
+        <p>
+            <a href="#" id="cvpr23">
+
+            <heading>Local-guided Global: Paired Similarity Representation for Visual Reinforcement Learning</heading></a>
+            <br>
+            Hyesong Choi, Hunsang Lee, Wonil Song, <u><b>Sangryul Jeon</b></u>, Dongbo Min, Kwanghoon Sohn
+            <br>
+            <!-- Under review -->
+            <b>CVPR 2023</b>
+
+        </p>
+
+        <div class="paper" id="cvpr23">
+        <a href="javascript:toggleblock('cvpr23_abs')">abstract</a> |
+        <a href="">paper</a>
+
+        <p align="justify">
+            <i id="cvpr23_abs">
+              Recent vision-based reinforcement learning (RL) methods have found extracting high-level features from raw pixels with self-supervised learning to be effective in learning policies. However, these methods focus on learning global representations of images, and disregard local spatial structures present in the consecutively stacked frames. In this paper, we propose a novel approach, termed self-supervised Paired Similarity Representation Learning (PSRL) for effectively encoding spatial structures in an unsupervised manner. Given the input frames, the latent volumes are first generated individually using an encoder, and they are used to capture the variance in terms of local spatial structures, i.e., correspondence maps among multiple frames. This enables for providing plenty of fine-grained samples for training the encoder of deep RL. We further attempt to learn the global semantic representations in the global prediction module that predicts future state representations using action vector as a medium. The proposed method imposes similarity constraints on the three latent volumes; transformed query representations by estimated pixel-wise correspondence, predicted query representations from the global prediction model, and target representations of future state, guiding global prediction with locality-inherent volume. Experimental results on complex tasks in Atari Games and DeepMind Control Suite demonstrate that the RL methods are significantly boosted by the proposed self-supervised learning of structured representations.
+            </i>
+        </p>
+
+        </div>
+    </td>
+  </tr>
+
+      <tr>
+        <td width="33%" valign="top" align="center">
+            <a href="#">
+            <img src="images/tpami21.png" alt="sym" width="300" height="210" style="border-radius:15px">
+            </a>
+        </td>
+
+        <td width="67%" valign="top">
+            <p>
+                <a href="#" id="tpami21">
+
+                <heading>Pyramidal Semantic Correspondence Networks</heading></a>
+                <br>
+                <u><b>Sangryul Jeon</b></u>, Seungryong Kim, Dongbo Min, Kwanghoon Sohn
+                <br>
+                <!-- Under review -->
+                <b>TPAMI 2022</b>
+            </p>
+
+            <div class="paper" id="tpami21">
+            <a href="javascript:toggleblock('tpami21_abs')">abstract</a> |
+            <a href="https://ieeexplore.ieee.org/document/9594706">paper</a>
+
+            <p align="justify">
+                <i id="tpami21_abs">
+                  This paper presents a deep architecture, called pyramidal semantic correspondence networks (PSCNet), that estimates locally-varying affine transformation fields across semantically similar images. To deal with large appearance and shape variations that commonly exist among different instances within the same object category, we leverage a pyramidal model where the affine transformation fields are progressively estimated in a coarse-to-fine manner so that the smoothness constraint is naturally imposed. Different from the previous methods which directly estimate global or local deformations, our method first starts to estimate the transformation from an entire image and then progressively increases the degree of freedom of the transformation by dividing coarse cell into finer ones. To this end, we propose two spatial pyramid models by dividing an image in a form of quad-tree rectangles or into multiple semantic elements of an object. Additionally, to overcome the limitation of insufficient training data, a novel weakly-supervised training scheme is introduced that generates progressively evolving supervisions through the spatial pyramid models by leveraging a correspondence consistency across image pairs. Extensive experimental results on various benchmarks including TSS, Proposal Flow-WILLOW, Proposal Flow-PASCAL, Caltech-101, and SPair-71k demonstrate that the proposed method outperforms the lastest methods for dense semantic correspondence.
+                </i>
+            </p>
+
+            </div>
+        </td>
+      </tr>
 
     <tr>
       <td width="33%" valign="top" align="center">
@@ -267,39 +333,6 @@
           <p align="justify">
               <i id="eccvw22_abs">
                 Sketches make an intuitive and powerful visual expression as they are fast executed freehand drawings. We present a method for synthesizing realistic photos from scene sketches. Without the need for sketch and photo pairs, our framework directly learns from readily available large-scale photo datasets in an unsupervised manner. To this end, we introduce a standardization module that provides pseudo sketch-photo pairs during training by converting photos and sketches to a standardized domain, i.e. the edge map. The reduced domain gap between sketch and photo also allows us to disentangle them into two components: holistic scene structures and low-level visual styles such as color and texture. Taking this advantage, we synthesize a photo-realistic image by combining the structure of a sketch and the visual style of a reference photo. Extensive experimental results on perceptual similarity metrics and human perceptual studies show the proposed method could generate realistic photos with high fidelity from scene sketches and outperform state-of-the-art photo synthesis baselines. We also demonstrate that our framework facilitates a controllable manipulation of photo synthesis by editing strokes of corresponding sketches, delivering more fine-grained details than previous approaches that rely on region-level editing.
-              </i>
-          </p>
-
-          </div>
-      </td>
-    </tr>
-
-    <tr>
-      <td width="33%" valign="top" align="center">
-          <a href="#">
-          <img src="images/tpami21.png" alt="sym" width="300" height="210" style="border-radius:15px">
-          </a>
-      </td>
-
-      <td width="67%" valign="top">
-          <p>
-              <a href="#" id="tpami21">
-
-              <heading>Pyramidal Semantic Correspondence Networks</heading></a>
-              <br>
-              <u><b>Sangryul Jeon</b></u>, Seungryong Kim, Dongbo Min, Kwanghoon Sohn
-              <br>
-              <!-- Under review -->
-              <b>TPAMI 2021</b>
-          </p>
-
-          <div class="paper" id="tpami21">
-          <a href="javascript:toggleblock('tpami21_abs')">abstract</a> |
-          <a href="https://ieeexplore.ieee.org/document/9594706">paper</a>
-
-          <p align="justify">
-              <i id="tpami21_abs">
-                This paper presents a deep architecture, called pyramidal semantic correspondence networks (PSCNet), that estimates locally-varying affine transformation fields across semantically similar images. To deal with large appearance and shape variations that commonly exist among different instances within the same object category, we leverage a pyramidal model where the affine transformation fields are progressively estimated in a coarse-to-fine manner so that the smoothness constraint is naturally imposed. Different from the previous methods which directly estimate global or local deformations, our method first starts to estimate the transformation from an entire image and then progressively increases the degree of freedom of the transformation by dividing coarse cell into finer ones. To this end, we propose two spatial pyramid models by dividing an image in a form of quad-tree rectangles or into multiple semantic elements of an object. Additionally, to overcome the limitation of insufficient training data, a novel weakly-supervised training scheme is introduced that generates progressively evolving supervisions through the spatial pyramid models by leveraging a correspondence consistency across image pairs. Extensive experimental results on various benchmarks including TSS, Proposal Flow-WILLOW, Proposal Flow-PASCAL, Caltech-101, and SPair-71k demonstrate that the proposed method outperforms the lastest methods for dense semantic correspondence.
               </i>
           </p>
 
